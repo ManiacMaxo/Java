@@ -1,9 +1,10 @@
-package Main.java;
+package Main;
 
-public class Food {
+public abstract class Food implements iHibernate {
     double quality;
     double quantity;
     int age;
+    int type;
 
     public Food() {
         this.quality = 0;
@@ -17,9 +18,8 @@ public class Food {
         this.age = 0;
     }
 
-    double getFoodScore() {
+    public double getFoodScore() {
         return this.quantity * this.quality;
     }
 
-    void passWinter() {}
 }
