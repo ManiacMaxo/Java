@@ -1,17 +1,53 @@
 package Main;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
 
-    public static void main(String args[]) {
-        System.out.println("hello");
-        Squirrel sq = new Squirrel("brown", "Bob", 2);
-        System.out.println(sq.name);
-        Cake cake = new Cake(5, 2);
-        sq.addFood(cake);
-        sq.passWinter();
-        double temp = 5 * (0.1 + 1.99 / Math.pow(2, 1 / 0.85));
-        System.out.println(temp);
-//        System.out.println(sq.burrow.food.get(0).quality);
-//        System.out.println(sq.burrow.food.get(0).quality);
+    public static void main(String[] args) throws Exception {
+        ArrayList<Squirrel> squirrels = new ArrayList<Squirrel>();
+
+        Squirrel sq = new Squirrel();
+
+        sq.addFood(new Cake(7, 2));
+        sq.addFood(new McBurger(10, 1));
+        sq.addFood(new Nuts(3, 8));
+        sq.addFood(new Cake(1, 2));
+        sq.addFood(new Cake(1, 2));
+
+        System.out.println(sq.toString());
+
+//        do {
+//            try (Scanner scanner = new Scanner(System.in)) {
+//                System.out.println("Enter a squirrel:");
+//                String input = scanner.nextLine();
+//                if (input.equals("stop")) {
+//                    break;
+//                }
+//                String[] temp = input.split(" ");
+//                String name = temp[0];
+//                int age = Integer.parseInt(temp[1]);
+//                String type = temp[2];
+//                squirrels.add(new Squirrel(name, age, type));
+//            }
+//        } while (true);
+//
+//        do {
+//            try (Scanner scanner = new Scanner(System.in)) {
+//                System.out.println("Enter a food:");
+//                String input = scanner.nextLine();
+//                if (input.equals("stop")) {
+//                    for (Squirrel obj : squirrels) {
+//                        System.out.println(obj.toString());
+//                        System.out.println(obj.burrow.food.toString());
+//                    }
+//                    break;
+//                }
+//                String[] temp = input.split(" ");
+//
+//
+//            }
+//        } while (true);
     }
 }

@@ -22,4 +22,7 @@ public abstract class Food implements iHibernate {
         return this.quantity * this.quality;
     }
 
+    public String toString() {
+        return "type: " + this.type +  ", score: " + this.getFoodScore();
+    }
 }

@@ -22,7 +22,14 @@ public class Burrow {
         for (Food obj : this.food) {
             obj.passWinter();
         }
-
     }
 
+    public String toString() {
+        String out = "[";
+        for (Food obj : this.food) {
+            out += obj.toString() + " | ";
+        }
+        out = out.substring(0, out.length() - 3) + "]";
+        return out;
+    }
 }

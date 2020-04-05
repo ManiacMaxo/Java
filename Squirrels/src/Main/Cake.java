@@ -8,8 +8,8 @@ public class Cake extends Food {
 
     @Override
     public void passWinter() {
+        this.age++;
         this.quantity -= (this.quantity * 0.3);
         this.quality *= 0.1 + (1.99 / Math.pow(2, this.age / 0.85));
-        this.age++;
     }
 }
