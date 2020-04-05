@@ -29,7 +29,10 @@ public class Burrow {
         for (Food obj : this.food) {
             out += obj.toString() + " | ";
         }
-        out = out.substring(0, out.length() - 3) + "]";
+        if (out.length() > 3) {
+            out = out.substring(0, out.length() - 3);
+        }
+        out += "]";
         return out;
     }
 }

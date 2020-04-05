@@ -10,11 +10,6 @@ public class Main {
 
         Squirrel sq = new Squirrel();
 
-        sq.addFood(new Cake(7, 2));
-        sq.addFood(new McBurger(10, 1));
-        sq.addFood(new Nuts(3, 8));
-        sq.addFood(new Cake(1, 2));
-        sq.addFood(new Cake(1, 2));
 
         System.out.println(sq.toString());
 

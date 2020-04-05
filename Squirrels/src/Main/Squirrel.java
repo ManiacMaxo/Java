@@ -43,4 +43,15 @@ public class Squirrel {
         }
     }
 
+    public String getType() {
+        return this.type;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
 }
