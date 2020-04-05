@@ -27,7 +27,7 @@ public class Squirrel {
         return "<" + this.type + "> " + this.name + "(" + this.age + ")\n" + this.burrow.toString();
     }
 
-    void addFood(Food food) throws Exception {
+    public void addFood(Food food) throws Exception {
         if (this.times_gathered == 4) {
             throw new Exception("Too many gatherings!");
         }
@@ -35,7 +35,7 @@ public class Squirrel {
         this.times_gathered++;
     }
 
-    void passWinter() {
+    public void passWinter() {
         this.times_gathered = 0;
         this.age++;
         for (Food obj : burrow.food) {
@@ -54,4 +54,9 @@ public class Squirrel {
     public int getAge() {
         return this.age;
     }
+
+    public Burrow getBurrow() {
+        return this.burrow;
+    }
+
 }

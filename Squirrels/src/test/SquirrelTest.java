@@ -1,8 +1,9 @@
 package test;
 
-import src.Main.Squirrel
-import src.Main.Cake
-import src.Main.Nuts
+import Main.Squirrel;
+import Main.Cake;
+import Main.Nuts;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,7 +13,7 @@ class SquirrelTest {
 
     @BeforeEach
     void setUp() {
-        squirrel = new Squirrel("Test", "Species", 5);
+        squirrel = new Squirrel("Test", 5, "Species");
     }
 
     @Test
