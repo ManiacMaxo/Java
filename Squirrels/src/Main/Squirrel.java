@@ -59,4 +59,7 @@ public class Squirrel {
         return this.burrow;
     }
 
+    public int getTimesGathered() {
+        return times_gathered;
+    }
 }
