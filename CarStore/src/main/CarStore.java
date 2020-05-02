@@ -2,12 +2,13 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 
 public class CarStore {
     protected ArrayList<Car> cars;
 
-    public CarStore(ArrayList<Car> cars) {
+    public CarStore() {
         this.cars = new ArrayList<Car>();
     }
 
@@ -54,8 +55,7 @@ public class CarStore {
     /**
      * Finds a car from the store by its registration number.
      *
-     * @throws CarNotFoundException if a car with this
-     *                              registration number is not found in the store
+     * @throws CarNotFoundException if a car with this registration number is not found in the store
      **/
     public Car getCarByRegistrationNumber(String registrationNumber) throws CarNotFoundException {
         for (Car car : this.cars) {
@@ -85,6 +85,8 @@ public class CarStore {
      * (according to the implementation of the Comparable<Car> interface).
      **/
     public Collection<Car> getCars() {
+        Collections.sort(this.cars);
+        return this.cars;
     }
 
     /**
@@ -92,6 +94,8 @@ public class CarStore {
      * order induced by the specified comparator.
      */
     public Collection<Car> getCars(Comparator<Car> comparator) {
+        Collections.sort(this.cars, comparator);
+        return this.cars;
     }
 
     /**
@@ -100,8 +104,12 @@ public class CarStore {
      *
      * @param isReversed if true, the cars should be returned in reverse order
      */
-    public Collection<Car> getCars(Comparator<Car> comparator,
-                                   boolean isReversed) {
+    public Collection<Car> getCars(Comparator<Car> comparator, boolean isReversed) {
+        Collections.sort(this.cars, comparator);
+        if (isReversed) {
+            Collections.reverse(this.cars);
+        }
+        return this.cars;
     }
 
     /**

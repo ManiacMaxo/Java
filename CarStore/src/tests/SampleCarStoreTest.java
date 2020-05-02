@@ -1,8 +1,6 @@
 package tests;
 
-import main.Car;
-import main.CarStore;
-import main.OrdinaryCar;
+import main.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -109,7 +107,7 @@ public class SampleCarStoreTest {
     }
 
     @Test
-    public void findByRegistrationNumberSucceeds() {
+    public void findByRegistrationNumberSucceeds() throws CarNotFoundException {
         Car one = new OrdinaryCar(
                 Model.AUDI,
                 CAR_MID_YEAR,

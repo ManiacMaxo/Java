@@ -1,20 +1,22 @@
 package main;
 
-public abstract class Car {
+public abstract class Car implements Comparable<Car> {
     Model model;
     int year;
     int price;
     EngineType engineType;
+    Region region;
     String registrationNumber;
 
-    public Car(Model model, int year, int price, EngineType engineType, String registrationNumber) {
+    public Car(Model model, int year, int price, EngineType engineType, Region region) {
         this.model = model;
         this.year = year;
         this.price = price;
         this.engineType = engineType;
-        this.registrationNumber = registrationNumber;
-    }
+        this.region = region;
 
+        this.registrationNumber = Region.getPrefix(this.region) + Region.getNumber() + Region.getChars();
+    }
 
     /**
      * Returns the model of the car.
@@ -49,5 +51,18 @@ public abstract class Car {
      */
     public String getRegistrationNumber() {
         return this.registrationNumber;
+    }
+
+    @Override
+    public int compareTo(Car otherCar) {
+        int val = this.model.compareTo(otherCar.getModel());
+        if (val == 0) {
+            val = this.year - otherCar.getYear();
+        }
+        return val;
+    }
+
+    public String toString() {
+        return String.format("%s %d $%d %s %s", this.model, this.year, this.price, this.engineType, this.registrationNumber);
     }
 }
