@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d759d26-fa1d-48f0-8286-2145b3fd5f14" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cUNhMhjcA6u2e6NPDQDllGSGEb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d759d26-fa1d-48f0-8286-2145b3fd5f14" name="Default Changelist" comment="" />
+      <created>1590579329861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590579329861</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="918" y="419" key="#com.intellij.ide.util.MemberChooser" timestamp="1590580516531">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="918" y="419" key="#com.intellij.ide.util.MemberChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1590580516531" />
+    <state x="843" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590580605770">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="843" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.3440.1400@0.0.3440.1400" timestamp="1590580605770" />
+    <state x="2334" y="348" key="SettingsEditor" timestamp="1591186297834">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2334" y="348" key="SettingsEditor/0.0.3440.1400@0.0.3440.1400" timestamp="1591186297834" />
+  </component>
+</project>
